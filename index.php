@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Supplement Doca</title>
+</head>
+<body>
+
+ 
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Your Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.php">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+</nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slika4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>BEST PROTEIN</h1>
+                    <p>MAKE SURE!
+                    </p>
+                    <a href="#" class="btn btn-dark">SHOP</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slika4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>BEST PROTEIN</h1>
+                    <p>MAKE SURE!</p>
+                    <a href="#" class="btn btn-dark">SHOP</a>
+                </div>
+            </div>
+           
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid bg-dark text-white pb-3 mb-3 fs-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="advertisement-area pt-3">
+                <div class="advertisement-text slide-in active">Shop our latest arrivals!</div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+<script>
+  var ads = ["New collection now available!", "Limited time offer - 20% off!", "Shop our latest arrivals!"];
+
+// Index to keep track of current advertisement
+var currentIndex = 0;
+
+// Reference to the advertisement text element
+var advertisementText = document.querySelector('.advertisement-text');
+
+// Function to display next advertisement
+function showNextAdvertisement() {
+  // Set the text content
+  advertisementText.textContent = ads[currentIndex];
+  // Add the 'active' class to slide in the text
+  advertisementText.classList.add('active');
+  // Wait for 3 seconds before sliding out
+  setTimeout(function() {
+    // Remove the 'active' class to slide out the text
+    advertisementText.classList.remove('active');
+    currentIndex = (currentIndex + 1) % ads.length; // Move to the next advertisement
+    // Wait for the slide-out animation to complete before showing the next advertisement
+    setTimeout(showNextAdvertisement, 500);
+  }, 3000);
+}
+
+// Call the function to start displaying advertisements
+showNextAdvertisement();
+
+
+// Function to fetch product data
+
+</script>
+<br><br><b><br><br><br><br><br></b>
+
+
+
+<h1 class="fs-1 text-center">NEW COLLECTION</h1>
+          <br><br>
+          <div class="container" id="new">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+               
+              </button>
+              <ul class="image-list">
+                <img class="image-item" src="img/slika9.jpg" alt="img-1">
+                <img class="image-item" src="img/slika10.jpg" alt="img-2">
+                <img class="image-item" src="img/slika11.jpg" alt="img-3">
+                <img class="image-item" src="img/slika13.jpg" alt="img-4">
+                <img class="image-item" src="img/slika14.jpg" alt="img-5">
+                <img class="image-item" src="img/slika15.jpg" alt="img-6">
+                <img class="image-item" src="img/slika20.jpg" alt="img-7">
+                <img class="image-item" src="img/slika17.jpg" alt="img-8">
+                <img class="image-item" src="img/slika18.jpg" alt="img-9">
+                <img class="image-item" src="img/slika19.jpg" alt="img-10">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+              
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+       
+
+          <script>
+       const initSlider = () => {
+    const imageList = document.querySelector(".slider-wrapper .image-list");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+    
+    // Handle scrollbar thumb drag
+    scrollbarThumb.addEventListener("mousedown", (e) => {
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+        
+        // Update thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+
+            // Ensure the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+            
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
+        }
+
+        // Remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        }
+
+        // Add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
+    });
+
+    // Slide images according to the slide button clicks
+    slideButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const direction = button.id === "prev-slide" ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+    });
+
+     // Show or hide slide buttons based on scroll position
+    const handleSlideButtons = () => {
+        slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+        slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+    }
+
+    // Update scrollbar thumb position based on image scroll
+    const updateScrollThumbPosition = () => {
+        const scrollPosition = imageList.scrollLeft;
+        const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+        scrollbarThumb.style.left = `${thumbPosition}px`;
+    }
+
+    // Call these two functions when image list scrolls
+    imageList.addEventListener("scroll", () => {
+        updateScrollThumbPosition();
+        handleSlideButtons();
+    });
+}
+
+window.addEventListener("resize", initSlider);
+window.addEventListener("load", initSlider);
+
+          
+</script>
+<br><br><br><br><br>
+
+
+<h1 class="fs-1 text-center">SUPPLEMENTS TO</h1>
+
+<div class="container-fluid bg">
+    <div class="row">
+        <div class="col-md-4 pt-4">
+       
+            <div class="image-container">
+              
+                <img src="img/ok.jpg" alt="Image 1">
+                <div class="text-overlay">
+                    
+                    <p>To achieve a leaner physique, focus on a combination of regular exercise and a balanced diet. Incorporate supplements like fat burners, protein powders, and amino acids to support your weight loss goals. Consult with a healthcare professional or a nutritionist to determine the most suitable supplements for your needs.</p>
+                </div>
+            </div>
+            <H2>GETTING SKINNIER</H2>
+        </div>
+        <div class="col-md-4 pt-4">
+       
+            <div class="image-container">
+                <img src="img/oko.jpg" alt="Image 2">
+                <div class="text-overlay">
+                    
+                    <p>Building muscle mass and strength requires a combination of resistance training, adequate protein intake, and proper recovery. Consider supplements such as whey protein, creatine, and branched-chain amino acids (BCAAs) to support muscle growth and recovery. Make sure to follow a structured workout routine and consume enough calories to fuel your workouts and promote muscle gain.</p>
+                </div>
+            </div>
+            <H2>GET STRONGER</H2>
+        </div>
+        <div class="col-md-4 pt-4">
+       
+            <div class="image-container">
+                <img src="img/oki.jpg" alt="Image 3">
+                <div class="text-overlay">
+                    
+                    <p>Prioritize your overall health by focusing on a well-rounded approach to nutrition and lifestyle. Include a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats in your diet. Consider incorporating supplements like multivitamins, omega-3 fatty acids, and probiotics to fill any nutritional gaps and support your immune system, heart health, and digestion. Remember to stay hydrated and engage in regular physical activity for optimal health and well-being.
+
+
+
+
+
+</p>
+                </div>
+            </div>
+            <H2>GET HEALTHIER</H2>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br>
+
+
+<h1 class="fs-1 text-center">SHOP</h1>
+
+
+<select id="descriptionFilter">
+  <option value="all">All Descriptions</option>
+  <option value="maximalium">MAXIMALIUM</option>
+  <option value="proteinisi">PROTEINISI</option>
+  <option value="omega">OMEGA</option>
+</select>
+<select id="typeFilter">
+  <option value="all">All Types</option>
+  <option value="kreatin">KREATIN</option>
+  <option value="protein">PROTEIN</option>
+  <option value="bcaa">BCAA</option>
+  <option value="preworkout">PRE WORKOUT</option>
+</select>
+<input type="text" id="nameFilter" placeholder="Filter by name">
+
+<select id="sortBy">
+  <option value="default">Sort by</option>
+  <option value="priceHigh">Price (High to Low)</option>
+  <option value="priceLow">Price (Low to High)</option>
+  <option value="dateNewest">Newest</option>
+</select>
+
+<div class="products" id="products"></div>
+
+<script>
+  let productsData; // Variable to store products data
+  
+  let http = new XMLHttpRequest();
+  http.open('get', 'products.json', true);
+  http.send();
+  http.onload = function(){
+      if(this.readyState == 4 && this.status == 200){
+          productsData = JSON.parse(this.responseText);
+          renderProducts(productsData); // Initial rendering of products
+      }
+  }
+
+  // Function to render products
+  function renderProducts(products) {
+      let output = "";
+      for(let item of products){
+          output += `
+              <div class="product ${item.type.toLowerCase()}">
+                  <img src="${item.image}" alt="${item.title}">
+                  <p class="title">${item.title}</p>
+                  <p class="description">${item.description}</p>
+                  <p class="price">${item.price} €</p>
+                 <button class="btn btn-light b">add to cart</button>
+              </div>
+          `;
+      }
+      document.getElementById("products").innerHTML = output;
+  }
+
+  // Function to filter products
+  function filterProducts() {
+      const descriptionFilter = document.getElementById("descriptionFilter").value.toLowerCase();
+      const typeFilter = document.getElementById("typeFilter").value.toLowerCase();
+      const nameFilter = document.getElementById("nameFilter").value.toLowerCase();
+      const filteredProducts = productsData.filter(product => {
+          const descriptionMatch = descriptionFilter === 'all' || product.description.toLowerCase() === descriptionFilter;
+          const typeMatch = typeFilter === 'all' || product.type.toLowerCase() === typeFilter;
+          const nameMatch = nameFilter === '' || product.title.toLowerCase().includes(nameFilter);
+          return descriptionMatch && typeMatch && nameMatch;
+      });
+      return filteredProducts;
+  }
+
+  // Event listeners for filter change
+  document.getElementById("descriptionFilter").addEventListener('change', updateProducts);
+  document.getElementById("typeFilter").addEventListener('change', updateProducts);
+  document.getElementById("nameFilter").addEventListener('input', updateProducts);
+  document.getElementById("sortBy").addEventListener('change', updateProducts);
+
+  // Function to update products based on filters and sorting
+  function updateProducts() {
+      const filteredProducts = filterProducts();
+      const sortBy = document.getElementById("sortBy").value;
+      let sortedProducts;
+
+      switch (sortBy) {
+          case 'priceHigh':
+              sortedProducts = filteredProducts.slice().sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+              break;
+          case 'priceLow':
+              sortedProducts = filteredProducts.slice().sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+              break;
+          case 'dateNewest':
+              sortedProducts = filteredProducts.slice().sort((a, b) => new Date(b.year) - new Date(a.year));
+              break;
+          default:
+              sortedProducts = filteredProducts;
+      }
+
+      renderProducts(sortedProducts);
+  }
+</script>
+
+<div class="container-fluid">
+<div class="products text-center" id="products"></div>
+</div>
+<script>
+  let http = new XMLHttpRequest();
+  http.open('get', 'products.json', true);
+  http.send();
+  http.onload = function(){
+      if(this.readyState == 4 && this.status == 200){
+          let products = JSON.parse(this.responseText);
+          let output = "";
+          for(let item of products){
+              output += `
+              <div class="product ${item.gender.toLowerCase()} ${item.type.toLowerCase()}">
+                      <img src="${item.image}" alt="${item.title}">
+                      <p class="title">${item.title}</p>
+                      <p class="description">${item.description}</p>
+                      <p class="price">${item.price} €</p>
+                      <p class="cart">Add to cart <i class="bx bx-cart-alt"></i></p>
+
+
+              `;
+          }
+          document.getElementById("products").innerHTML = output;
+      }
+  }
+
+  // Function to filter products
+  function filterProducts() {
+      const genderFilter = document.getElementById("genderFilter").value.toLowerCase();
+      const typeFilter = document.getElementById("typeFilter").value.toLowerCase();
+      const nameFilter = document.getElementById("nameFilter").value.toLowerCase();
+      const products = document.querySelectorAll('.product');
+      products.forEach(product => {
+          const genderMatch = genderFilter === 'all' || product.classList.contains(genderFilter);
+          const typeMatch = typeFilter === 'all' || product.classList.contains(typeFilter);
+          const nameMatch = nameFilter === '' || product.querySelector('.title').textContent.toLowerCase().includes(nameFilter);
+          if (genderMatch && typeMatch && nameMatch) {
+              product.style.display = 'block';
+          } else {
+              product.style.display = 'none';
+          }
+      });
+  }
+
+  // Event listeners for filter change
+  document.getElementById("genderFilter").addEventListener('change', filterProducts);
+  document.getElementById("typeFilter").addEventListener('change', filterProducts);
+  document.getElementById("nameFilter").addEventListener('input', filterProducts);
+</script>
+
+  <br><br><br><br><br><br><br>
+      <!-- Bootstrap JS, jQuery, and Popper.js -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+</body>
+</html>

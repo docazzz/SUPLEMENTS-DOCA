@@ -1,0 +1,466 @@
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+  @media screen and (max-width: 600px) {
+    .navbar .menu {display: none;}
+    .navbar.responsive .menu {display: block;}
+    .navbar ul {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .navbar .menu {
+      display: block;
+    }
+  }
+
+.carousel-inner{
+    height: 640px !important;
+   
+}
+
+
+
+.carousel-caption {
+    position: absolute;
+    /* Adjust this value to move the caption higher */
+    transform: translateX(-50%);
+    left: 30%;
+  
+    text-align: center;
+    color: #fff;
+    width: 70%;
+   
+    padding: 20px; /* Add padding for better readability */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    opacity: 0; /* Hide the caption by default */
+    transition: opacity 0.5s ease; /* Smooth fade-in transition */
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 30%;
+    right: 10%;
+    bottom: 20px;
+    color: black; /* Text color */
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    color: white; /* Heading and paragraph color */
+}
+
+
+.carousel-caption h1,
+.carousel-caption p {
+    color: #fff; /* White text color */
+}
+
+.carousel-item.active .carousel-caption {
+    opacity: 1; /* Show the caption when the carousel item is active */
+}
+
+
+
+.btn-link {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff; /* Bootstrap primary color for the button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-link:hover {
+    background-color: #0056b3; /* Darker shade of the primary color on hover */
+}
+.sidebar{
+    z-index: 177777777;
+}
+.advertisement-area {
+   
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    height: 50px; /* Fixed height for the advertis
+    ement area */
+    overflow: hidden; /* Hide overflowing text */
+    
+  }
+  .advertisement-text  {
+    display: inline-block; /* Display as inline-block */
+    vertical-align: middle; /* Vertically align */
+  }
+  .advertisement-text {
+    display: inline-block; /* Display as inline-block */
+    vertical-align: middle; /* Vertically align */
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+  }
+  .advertisement-text.slide-in {
+    transform: translateX(100%); /* Initial position outside the container */
+  }
+  .advertisement-text.slide-in.active {
+    transform: translateX(0%); /* Slide in to the container */
+  }
+  .advertisement-images img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .advertisement-images .col-md-4 {
+    padding: 0; /* Remove padding */
+  }
+
+  .slider-wrapper {
+    position: relative;
+  }
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 20px;
+    z-index: 2; /* Set a higher z-index */
+}
+
+.sidebar-header {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 20px;
+}
+
+.sidebar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    z-index: 1; /* Set a lower z-index */
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%; /* Make images take up 100% of the container width */
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container .image-caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+.text-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background color */
+}
+
+.text-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #666;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #007bff; /* Bootstrap's primary color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade of primary color on hover */
+}
+
+/* Container to hold the images and text */
+.container {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+/* Style for each column containing an image and text */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ddd; /* Border for the images */
+    /* Rounded corners for the images */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.bg{
+    background-color: #000;
+}
+
+
+.b{
+    background-color: #000;
+}
+.b:hover{
+    background-color: #fff!important;
+   
+}
+/* Style for the image */
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Animation on hover */
+}
+
+/* Style for the text overlay */
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with opacity */
+    padding: 20px;
+    color: #fff;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Fade-in animation */
+}
+
+/* Style for the text overlay when hovered */
+.image-container:hover .text-overlay {
+    opacity: 1; /* Show text on hover */
+}
+
+/* Style for the text heading */
+.text-overlay h2 {
+    margin-top: 0;
+}
+
+/* Style for the text paragraphs */
+.text-overlay p {
+    margin-bottom: 0;
+}
+.product {
+    display: inline-block;
+    width: calc(25% - 20px); /* Adjust width for four items in a row */
+    
+    vertical-align: top;
+   text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+   
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  /* Style for select elements */
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+  }
+
+  /* Style for text input */
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  /* Style for sort by select */
+  #sortBy {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+  }
+
+  /* Style for option elements */
+  option {
+    padding: 8px;
+  }

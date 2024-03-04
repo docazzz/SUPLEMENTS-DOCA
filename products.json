@@ -1,0 +1,194 @@
+[
+    {
+       "image": "img/kreatin.jpg",
+       "title": "KREATIN MONOHIDRAT",
+       "description": "MAXIMALIUM",
+       "price": "209,99",
+       "type":"kreatin"
+       
+    
+ 
+    },
+    {
+      
+       "image": "img/amino.jpg",
+       "title": "BCAA",
+       "description": "PROTEINISI",
+       "price": "184,99",
+       "type":"bcaa"
+      
+    },
+    {
+      
+       "image": "img/prot.jpg",
+       "title": "PROTEIN",
+       "description": "PROTEINISI",
+       "price": "229,99",
+       "type":"protein"
+       
+       
+ 
+    },
+    {
+        
+       "image": "img/pr.jpg",
+       "title": "PROTEIN",
+       "description": "MAXIMALIUM",
+       "price": "129,99",
+       "type":"protein"
+       
+     
+    },
+    {
+       
+       "image": "img/pr1.jpg",
+       "title": "PROTEIN",
+       "description": "OMEGA",
+       "price": "199,99",
+       "type":"protein"
+       
+      
+    },
+    {
+        
+       "image": "img/pr2.jpg",
+       "title": "PROTEIN",
+       "description": "MAXIMALIUM",
+       "price": "189,99",
+       "type":"protein"
+    
+ 
+    },
+    {
+        
+        "image": "img/pr3.jpg",
+        "title": "PROTEIN",
+        "description": "MAXIMALIUM",
+        "price": "119,99",
+        "type":"protein"
+        
+ 
+     },
+     {
+      
+        "image": "img/pr4.jpg",
+        "title": "PROTEIN",
+        "description": "OMEGA",
+        "price": "220,99",
+        "type":"protein"
+ 
+     },
+     {
+       
+        "image": "img/kr.jpg",
+        "title": "KREATIN",
+        "description": "MAXIMALIUM",
+        "price": "189,99",
+        "type":"kreatin"
+        
+ 
+     },
+     {
+        
+        "image": "img/kr1.jpg",
+        "title": "KREATIN MONOHIDRAT",
+        "description": "PROTEINISI",
+        "price": "199,99",
+        "type":"kreatin"
+ 
+     },
+     {
+        
+        "image": "img/kr2.jpg",
+        "title": "KREATIN MONOHIDRAT",
+        "description": "PROTEINISI",
+        "price": "179,99",
+        "type":"kreatin"
+ 
+     },
+     {
+        
+        "image": "img/kr3.jpg",
+        "title": "KREATIN MONOHIDRAT",
+        "description": "PROTEINISI",
+        "price": "189,99",
+        "type":"kreatin"
+        
+ 
+     },
+     {
+       
+        "image": "img/bca.jpg",
+        "title": "BCAA",
+        "description": "PROTEINISI",
+        "price": "149,99",
+        "type":"bcaa"
+ 
+     },
+     {
+        "image": "img/bca1.jpg",
+        "title": "BCAA",
+        "description": "MAXIMALIUM",
+        "price": "209,99",
+        "type":"bcaa"
+ 
+     },
+     {
+        
+        "image": "img/bca2.jpg",
+        "title": "BCAA",
+        "description": "MAXIMALIUM",
+        "price": "129,99",
+        "type":"bcaa"
+ 
+     },
+     {
+        
+        "image": "img/bca3.jpg",
+        "title": "BCAA",
+        "description": "MAXIMALIUM",
+        "price": "219,99",
+        "type":"bcaa"
+ 
+     },
+     {
+      
+        "image": "img/pre.jpg",
+        "title": "PRE WORKOUT",
+        "description": "OMEGA",
+        "price": "149,99",
+        "type":"preworkout"
+ 
+     }
+     ,
+     {
+      
+        "image": "img/pre1.jpg",
+        "title": "PRE WORKOUT",
+        "description": "MAXIMALIUM",
+        "price": "149,99",
+        "type":"preworkout"
+ 
+     }
+     ,
+     {
+      
+        "image": "img/pre2.jpg",
+        "title": "PRE WORKOUT",
+        "description": "MAXIMALIUM",
+        "price": "149,99",
+        "type":"preworkout"
+ 
+     }
+     ,
+     {
+      
+        "image": "img/pre4.jpg",
+        "title": "PRE WORKOUT",
+        "description": "OMEGA",
+        "price": "149,99",
+        "type":"preworkout"
+ 
+     }
+ ]
+ 
